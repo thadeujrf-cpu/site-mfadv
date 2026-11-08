@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mirandafernandes.adv.br/sitemap.xml

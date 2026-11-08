@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miranda Fernandes Advogados | Manhuaçu/MG</title>
+<meta name="description" content="Sociedade de advogados em Manhuaçu/MG. Advocacia trabalhista empresarial, consultoria preventiva para empresas, cível, contratos, bancário, imobiliário e tributário.">
+<link rel="canonical" href="https://mirandafernandes.adv.br/">
+<meta name="theme-color" content="#091A2E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Miranda Fernandes Advogados">
+<meta property="og:title" content="Miranda Fernandes Advogados">
+<meta property="og:description" content="Advocacia empresarial, trabalhista e cível em Manhuaçu/MG e região.">
+<meta property="og:url" content="https://mirandafernandes.adv.br/">
+<meta property="og:image" content="https://mirandafernandes.adv.br/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="hero-textura.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Miranda Fernandes Advogados",
+  "url": "https://mirandafernandes.adv.br/",
+  "logo": "https://mirandafernandes.adv.br/logo-horizontal-escuro.svg",
+  "image": "https://mirandafernandes.adv.br/sala-reunioes.jpg",
+  "telephone": "+55-33-99918-1359",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Benedito Von Randow, 37, Alfa Sul",
+    "addressLocality": "Manhuaçu",
+    "addressRegion": "MG",
+    "postalCode": "36904-198",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }],
+  "areaServed": ["Manhuaçu","Ponte Nova","Muriaé","Caratinga","Manhumirim","Minas Gerais"]
+}
+</script>
+<style>
+:root{
+  --navy:#091A2E;
+  --navy-2:#0F2642;
+  --navy-deep:#06121F;
+  --cobre:#BD8350;
+  --cobre-dk:#A06C3D;
+  --cobre-soft:#E9D6C2;
+  --ink:#14202E;
+  --muted:#5B6675;
+  --line:#E4E0DA;
+  --paper:#FFFFFF;
+  --sand:#F7F3EE;
+  --wrap:1180px;
+  --hdr:80px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Urbanist",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:0;background:var(--cobre);color:#fff;padding:8px 14px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+.label{display:inline-flex;align-items:center;gap:14px;color:var(--cobre);font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+.label::before,.label::after{content:"";width:34px;height:1.5px;background:var(--cobre);flex:none}
+.label.left::after{display:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;font-weight:700;font-size:15px;letter-spacing:.03em;text-decoration:none;border-radius:3px;padding:15px 26px;transition:background .2s,color .2s,border-color .2s;border:1.5px solid transparent;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-cobre{background:var(--cobre);color:#fff}
+.btn-cobre:hover{background:var(--cobre-dk)}
+.btn-line{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-line:hover{border-color:var(--cobre);color:var(--cobre-soft)}
+.btn-dark{border-color:var(--navy);color:var(--navy)}
+.btn-dark:hover{background:var(--navy);color:#fff}
+
+/* Header */
+.top{position:sticky;top:0;z-index:50;background:rgba(9,26,46,.97);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--hdr);gap:24px}
+.brand img{height:54px;width:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:15px;font-weight:600;letter-spacing:.02em}
+.nav a:hover{color:#fff}
+.nav .btn{padding:11px 18px;font-size:14px;color:#fff}
+.menu-btn{display:none;background:none;border:0;color:#fff;padding:8px;cursor:pointer}
+.menu-btn svg{width:28px;height:28px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;isolation:isolate}
+.hero-bg{position:absolute;top:0;right:0;bottom:0;width:58%;z-index:-1;background:url(hero-textura.jpg) center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 38%);mask-image:linear-gradient(90deg,transparent 0,#000 38%);opacity:.85}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,26,46,.35),rgba(9,26,46,.15) 40%,rgba(9,26,46,.75))}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;min-height:640px;padding-top:80px;padding-bottom:88px}
+.hero h1{margin:24px 0 0;font-size:clamp(36px,4.8vw,60px);line-height:1.08;font-weight:800;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:var(--cobre)}
+.hero p.lead{margin:24px 0 0;max-width:52ch;font-size:clamp(17px,1.5vw,19px);color:rgba(255,255,255,.8)}
+.hero .actions{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+.hero .facts{margin-top:56px;display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0 44px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.hero .facts b{display:block;font-size:26px;font-weight:800;color:var(--cobre);line-height:1.1}
+.hero .facts span{display:block;margin-top:6px;font-size:14px;color:rgba(255,255,255,.68)}
+.hero-seal{justify-self:center;position:relative;width:min(100%,360px);aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:40px 32px;background:rgba(6,18,31,.55);backdrop-filter:blur(3px);border:1px solid rgba(189,131,80,.55)}
+.hero-seal::before{content:"";position:absolute;inset:12px;border:1px solid rgba(189,131,80,.25);pointer-events:none}
+.hero-seal img.shield{width:58%;height:auto}
+.hero-seal .seal-name{text-align:center}
+.hero-seal .seal-name b{display:block;font-size:24px;font-weight:700;letter-spacing:.01em;line-height:1.15}
+.hero-seal .seal-name span{display:block;margin-top:8px;font-size:12px;font-weight:600;letter-spacing:.42em;color:rgba(255,255,255,.75);text-transform:uppercase;padding-left:.42em}
+.hero-seal .seal-meta{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--cobre);text-align:center;line-height:1.7}
+
+/* Sections */
+section{scroll-margin-top:var(--hdr)}
+.sec{padding:112px 0}
+.sec h2{margin:18px 0 0;font-size:clamp(30px,3.5vw,44px);line-height:1.15;font-weight:800;letter-spacing:-.01em;color:var(--navy);max-width:22ch}
+.sec .intro{margin:20px 0 0;max-width:62ch;color:var(--muted);font-size:18px}
+.center{text-align:center}
+.center h2,.center .intro{margin-left:auto;margin-right:auto}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-photo .tag{position:absolute;right:-24px;bottom:40px;background:var(--navy);color:#fff;padding:22px 24px;max-width:220px}
+.about-photo .tag b{display:block;font-size:34px;line-height:1;color:var(--cobre);font-weight:800}
+.about-photo .tag span{display:block;margin-top:8px;font-size:14px;color:rgba(255,255,255,.8);line-height:1.4}
+.about-text p{margin:0 0 16px;color:#2A3646}
+.values{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:0 32px;border-top:1px solid var(--line)}
+.values > div{padding:20px 0;border-bottom:1px solid var(--line)}
+.values h3{margin:0;font-size:17px;color:var(--navy);font-weight:800;display:flex;align-items:center;gap:10px}
+.values h3::before{content:"";width:7px;height:7px;border:1.5px solid var(--cobre);transform:rotate(45deg);flex:none}
+.values p{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+
+/* Areas */
+.areas{background:var(--sand)}
+.area-grid{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.area{background:#fff;padding:38px 34px 40px;position:relative}
+.area::before{content:"";position:absolute;left:0;top:0;width:0;height:3px;background:var(--cobre);transition:width .3s}
+.area:hover::before{width:100%}
+.area .ic{width:44px;height:44px;color:var(--cobre)}
+.area h3{margin:22px 0 10px;font-size:21px;line-height:1.25;color:var(--navy);font-weight:800}
+.area p{margin:0;color:var(--muted);font-size:16px}
+.area ul{margin:16px 0 0;padding:0;list-style:none}
+.area li{position:relative;padding-left:18px;font-size:15px;color:#3A4655;margin-top:6px}
+.area li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1.5px;background:var(--cobre)}
+
+/* Companies */
+.empresas{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:0}
+.emp-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.emp-photo{position:relative;background:var(--navy-2)}
+.emp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.emp-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,26,46,0) 60%,rgba(9,26,46,.55))}
+.emp-body{padding:104px 0 104px 72px;max-width:640px}
+.empresas h2{color:#fff}
+.empresas .intro{color:rgba(255,255,255,.75)}
+.steps{margin:40px 0 0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.12)}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.steps .num{font-size:14px;font-weight:800;color:var(--cobre);letter-spacing:.14em;padding-top:2px}
+.steps h3{margin:0;font-size:18px;font-weight:700}
+.steps p{margin:4px 0 0;color:rgba(255,255,255,.7);font-size:15px;line-height:1.55}
+.empresas .cta{margin-top:40px}
+
+/* Lawyers */
+.team-grid{margin-top:56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;max-width:900px;margin-left:auto;margin-right:auto}
+.lawyer{margin:0;background:#fff;border:1px solid var(--line)}
+.lawyer .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--navy)}
+.lawyer .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.lawyer .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--cobre)}
+.lawyer figcaption{padding:24px 26px 26px}
+.lawyer h3{margin:0;font-size:20px;line-height:1.3;color:var(--navy);font-weight:800}
+.lawyer .oab{display:block;margin-top:6px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cobre)}
+.lawyer p{margin:12px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+
+/* Structure gallery */
+.gallery{margin-top:56px;display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:300px 300px;gap:16px}
+.gallery figure{margin:0;position:relative;overflow:hidden;background:#ddd}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.03)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 16px;background:linear-gradient(180deg,rgba(6,18,31,0),rgba(6,18,31,.78));color:#fff;font-weight:700;font-size:15px;letter-spacing:.02em}
+.g1{grid-row:1/3}
+.g4{grid-column:2/4}
+.g4 img{object-position:50% 40%}
+
+/* Region */
+.region{background:var(--sand)}
+.region-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.cities{margin:30px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 28px;border-top:1px solid var(--line)}
+.cities li{padding:15px 0;border-bottom:1px solid var(--line);font-weight:700;color:var(--navy);display:flex;align-items:center;gap:12px}
+.cities li span{font-weight:500;color:var(--muted);font-size:14px}
+.cities li::before{content:"";width:8px;height:8px;border:1.5px solid var(--cobre);transform:rotate(45deg);flex:none}
+.modes{display:grid;gap:16px}
+.mode{border:1px solid var(--line);padding:28px 30px;display:grid;grid-template-columns:44px 1fr;gap:20px;align-items:start;background:#fff}
+.mode .ic{width:38px;height:38px;color:var(--cobre)}
+.mode h3{margin:0;font-size:18px;color:var(--navy);font-weight:800}
+.mode p{margin:5px 0 0;color:var(--muted);font-size:15px}
+
+/* Contact */
+.contact-grid{margin-top:56px;display:grid;grid-template-columns:1fr 1.15fr;gap:0;background:#fff;border:1px solid var(--line)}
+.contact-info{padding:48px 46px}
+.ci{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.ci:first-child{padding-top:0}
+.ci:last-of-type{border-bottom:0}
+.ci svg{width:26px;height:26px;color:var(--cobre);margin-top:3px}
+.ci small{display:block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cobre)}
+.ci b,.ci a{display:block;font-size:18px;color:var(--navy);font-weight:700;text-decoration:none;margin-top:2px}
+.ci a:hover{color:var(--cobre)}
+.ci span{display:block;color:var(--muted);font-size:15px}
+.contact-info .btn{margin-top:26px;width:100%}
+.map{min-height:440px;position:relative;background:#E9E5DF}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.25)}
+
+/* Footer */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
+.foot-top{border-top:3px solid var(--cobre);padding:64px 0 48px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.foot-grid .flogo{height:120px;width:auto}
+.foot-grid h4{margin:0 0 14px;color:#fff;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.foot-grid p{margin:0 0 6px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--cobre-soft)}
+.foot-legal{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;font-size:13px;color:rgba(255,255,255,.55)}
+.foot-legal .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.foot-legal strong{color:rgba(255,255,255,.8);font-weight:600;letter-spacing:.06em}
+
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1F9D55;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(6,18,31,.28);transition:transform .2s}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:30px;height:30px}
+:focus-visible{outline:2px solid var(--cobre);outline-offset:3px}
+
+/* Responsive */
+@media (max-width:1060px){
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:40px}
+  .area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-grid{gap:56px}
+  .emp-body{padding:88px 0 88px 48px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid > div:first-child{grid-column:1/-1}
+}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav{position:absolute;top:var(--hdr);left:0;right:0;background:var(--navy);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;border-bottom:1px solid rgba(255,255,255,.08);display:none}
+  .nav.open{display:flex}
+  .nav a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:17px}
+  .nav .btn{margin-top:18px;border-bottom:0;padding:14px}
+  .hero-grid{grid-template-columns:1fr;padding-top:64px;padding-bottom:80px;gap:48px;min-height:0}
+  .hero-bg{width:100%;-webkit-mask-image:linear-gradient(180deg,transparent 30%,#000 75%);mask-image:linear-gradient(180deg,transparent 30%,#000 75%);opacity:.7}
+  .hero-seal{justify-self:start;width:100%;max-width:none;aspect-ratio:auto;flex-direction:row;justify-content:flex-start;padding:24px 26px;gap:22px}
+  .hero-seal img.shield{width:64px}
+  .hero-seal .seal-name{text-align:left}
+  .hero-seal .seal-name b{font-size:19px}
+  .hero-seal .seal-meta{display:none}
+  .about-grid,.region-grid{grid-template-columns:1fr;gap:56px}
+  .about-photo{max-width:520px}
+  .emp-grid{grid-template-columns:1fr}
+  .emp-photo{min-height:340px}
+  .emp-photo::after{background:linear-gradient(180deg,rgba(9,26,46,0) 55%,rgba(9,26,46,.6))}
+  .emp-body{padding:72px 24px 80px;max-width:none}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery figure{aspect-ratio:4/5}
+  .g1{grid-row:auto;grid-column:1/-1;aspect-ratio:4/3!important}
+  .g1 img{object-position:50% 45%}
+  .g4{grid-column:1/-1;aspect-ratio:16/9!important}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  :root{--hdr:68px}
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .brand img{height:42px}
+  .hide-sm{display:none}
+  .label{font-size:12px;letter-spacing:.2em}
+  .hero-grid{padding-top:52px;padding-bottom:72px}
+  .hero .mark{width:340px;left:-120px;bottom:-110px}
+  .hero .actions .btn{flex:1 1 100%}
+  .hero .facts{grid-template-columns:repeat(3,auto);gap:0 22px;margin-top:44px}
+  .hero .facts b{font-size:20px}
+  .hero .facts span{font-size:12.5px}
+  .team-grid{grid-template-columns:1fr;gap:24px}
+  .hero-seal{display:none}
+  .hero-bg{opacity:.45}
+  .sec{padding:80px 0}
+  .about-photo .tag{right:-8px;bottom:20px;padding:16px 18px;max-width:180px}
+  .about-photo .tag b{font-size:28px}
+  .values{grid-template-columns:1fr}
+  .area-grid{grid-template-columns:1fr}
+  .area{padding:30px 24px}
+  .emp-body{padding:64px 18px 72px}
+  .gallery{gap:10px}
+  .gallery figcaption{padding:36px 12px 12px;font-size:13px}
+  .cities{grid-template-columns:1fr}
+  .mode{padding:22px 20px;grid-template-columns:38px 1fr;gap:14px}
+  .contact-info{padding:34px 22px}
+  .map{min-height:320px}
+  .foot-grid{grid-template-columns:1fr;gap:34px}
+  .foot-grid .flogo{height:100px}
+  .foot-top{padding:52px 0 36px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Miranda Fernandes Advogados, início">
+      <img src="logo-horizontal-claro.svg" alt="Miranda Fernandes Advogados" width="211" height="54">
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#escritorio">Escritório</a>
+      <a href="#atuacao">Áreas de atuação</a>
+      <a href="#empresas">Para empresas</a>
+      <a href="#advogados">Advogados</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar atendimento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="label">Sociedade de Advogados<span class="hide-sm">&nbsp;· Manhuaçu/MG</span></span>
+      <h1>Advocacia empresarial, trabalhista e <em>cível</em>.</h1>
+      <p class="lead">Atuação preventiva e contenciosa para empresas, produtores rurais e pessoas, com atendimento próximo e acompanhamento em cada etapa do caso.</p>
+      <div class="actions">
+        <a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.44 1.32-1.98 1.37-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.03-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.56.79 1.93.86 2.07.07.14.12.3.02.49-.09.19-.14.3-.28.47-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.73 1.2 1.56 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.89.28.14.46.21.53.33.07.12.07.69-.18 1.38z"/></svg>
+          Fale pelo WhatsApp
+        </a>
+        <a class="btn btn-line" href="#atuacao">Conheça as áreas</a>
+      </div>
+      <div class="facts">
+        <div><b>2018</b><span>em atividade</span></div>
+        <div><b>17.886</b><span>registro OAB/MG</span></div>
+        <div><b>On-line</b><span>e presencial</span></div>
+      </div>
+    </div>
+    <div class="hero-seal" aria-hidden="true">
+      <img class="shield" src="escudo.svg" alt="" width="200" height="200">
+      <div class="seal-name"><b>Miranda Fernandes</b><span>Advogados</span></div>
+      <div class="seal-meta">Desde 2018 · Manhuaçu/MG</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="escritorio">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="oswaldo-mesa.jpg" alt="Dr. Oswaldo Thadeu Miranda Fernandes Júnnior em seu escritório" width="900" height="1125" loading="lazy">
+      <div class="tag"><b>Desde 2018</b><span>atendendo empresas e pessoas na região</span></div>
+    </div>
+    <div class="about-text">
+      <span class="label left">O escritório</span>
+      <h2>Proximidade com o cliente e cuidado técnico em cada caso.</h2>
+      <p class="intro" style="margin-bottom:24px">O Miranda Fernandes Advogados atende a partir de Manhuaçu, na Zona da Mata mineira, empresas, produtores rurais e pessoas físicas.</p>
+      <p>Nosso trabalho começa por entender o negócio e a realidade de quem nos procura. Na advocacia empresarial, isso significa orientar antes do problema: rotinas trabalhistas, contratos e documentação organizados reduzem riscos e dão segurança para decidir.</p>
+      <p>Quando o conflito já existe, atuamos com estratégia definida desde o início, comunicação clara sobre cada etapa e acompanhamento próximo até o encerramento do caso.</p>
+      <div class="values">
+        <div><h3>Prevenção</h3><p>Orientação contínua para evitar passivos, não apenas para responder a eles.</p></div>
+        <div><h3>Transparência</h3><p>Informação clara sobre riscos, caminhos possíveis e andamento do processo.</p></div>
+        <div><h3>Ética</h3><p>Atuação pautada pelo Estatuto da Advocacia e pelo Código de Ética da OAB.</p></div>
+        <div><h3>Proximidade</h3><p>Atendimento direto com a equipe responsável, presencial ou on-line.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec areas" id="atuacao">
+  <div class="wrap">
+    <div class="center">
+      <span class="label">Áreas de atuação</span>
+      <h2>Consultoria e contencioso nas principais demandas de empresas e pessoas.</h2>
+    </div>
+    <div class="area-grid">
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="15" width="34" height="24" rx="2"/><path d="M18 15v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4M7 26h34M22 26v4h4v-4"/></svg>
+        <h3>Trabalhista empresarial</h3>
+        <p>Defesa de empresas e empregadores, inclusive rurais, em reclamações trabalhistas.</p>
+        <ul><li>Contestações, audiências e recursos</li><li>Acordos e execuções</li><li>Perícias de insalubridade e periculosidade</li></ul>
+      </article>
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M24 6 9 12v11c0 9.4 6.4 16.3 15 19 8.6-2.7 15-9.6 15-19V12L24 6z"/><path d="m17.5 24 4.5 4.5 9-9"/></svg>
+        <h3>Consultoria preventiva para empresas</h3>
+        <p>Acompanhamento jurídico contínuo das rotinas trabalhistas e contratuais.</p>
+        <ul><li>Auditoria de RH, ponto e documentação</li><li>Desligamentos e rescisões</li><li>Regulamentos e políticas internas</li></ul>
+      </article>
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8M19 22h12M19 28h12M19 34h7"/></svg>
+        <h3>Cível e contratos</h3>
+        <p>Elaboração e revisão de contratos e atuação em litígios cíveis.</p>
+        <ul><li>Contratos empresariais e de prestação de serviços</li><li>Cobranças, monitórias e execuções</li><li>Responsabilidade civil e consumidor</li></ul>
+      </article>
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 22 24 9l17 13"/><path d="M11 19v20h26V19"/><path d="M20 39V28h8v11"/></svg>
+        <h3>Imobiliário e possessório</h3>
+        <p>Proteção da posse e regularização de imóveis urbanos e rurais.</p>
+        <ul><li>Possessórias, divisas e demarcações</li><li>Compra e venda e locação</li><li>Inventários e partilhas</li></ul>
+      </article>
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 24 8l18 10M9 18v18M17 18v18M31 18v18M39 18v18M6 40h36"/></svg>
+        <h3>Bancário</h3>
+        <p>Análise de contratos bancários e defesa em operações de crédito.</p>
+        <ul><li>Revisão de contratos e garantias</li><li>Cédulas de crédito rural</li><li>Fraudes e golpes bancários</li></ul>
+      </article>
+      <article class="area">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="2"/><path d="M16 14h16M16 21h4M22 21h4M28 21h4M16 27h4M22 27h4M28 27h4M16 33h4M22 33h10"/></svg>
+        <h3>Tributário</h3>
+        <p>Planejamento tributário e regularização fiscal de empresas.</p>
+        <ul><li>Planejamento tributário</li><li>Renegociação e parcelamento de dívidas fiscais</li><li>Defesa em autuações e execuções fiscais</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="empresas" id="empresas">
+  <div class="emp-grid">
+    <div class="emp-photo"><img src="consultoria.jpg" alt="" loading="lazy" width="1100" height="1467"></div>
+    <div class="emp-body">
+      <span class="label left">Para empresas</span>
+      <h2 class="h2w" style="margin:18px 0 0;font-size:clamp(30px,3.4vw,42px);line-height:1.15;font-weight:800;letter-spacing:-.01em">Consultoria trabalhista preventiva: organizar antes de litigar.</h2>
+      <p class="intro" style="margin:20px 0 0;font-size:18px">Grande parte das reclamações trabalhistas nasce de falhas de rotina e de documentação. A consultoria acompanha a empresa mês a mês para corrigir esses pontos de forma planejada.</p>
+      <ol class="steps">
+        <li><span class="num">01</span><div><h3>Diagnóstico</h3><p>Contratos, ponto, folha, saúde e segurança do trabalho e processos em andamento.</p></div></li>
+        <li><span class="num">02</span><div><h3>Ajustes</h3><p>Correção de documentos, regulamentos e rotinas, por ordem de prioridade.</p></div></li>
+        <li><span class="num">03</span><div><h3>Acompanhamento</h3><p>Suporte contínuo ao RH em admissões, advertências, afastamentos e desligamentos.</p></div></li>
+        <li><span class="num">04</span><div><h3>Defesa</h3><p>Quando houver processo, a defesa parte de uma documentação já organizada.</p></div></li>
+      </ol>
+      <div class="cta"><a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20consultoria%20trabalhista%20preventiva%20para%20empresas." target="_blank" rel="noopener">Conversar sobre a consultoria</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec region" id="advogados">
+  <div class="wrap">
+    <div class="center">
+      <span class="label">Advogados</span>
+      <h2>Quem conduz o seu caso.</h2>
+      <p class="intro">Cada caso tem um advogado responsável, que acompanha o cliente do primeiro atendimento ao encerramento.</p>
+    </div>
+    <div class="team-grid">
+      <figure class="lawyer">
+        <div class="ph"><img src="oswaldo.jpg" alt="Oswaldo Thadeu Miranda Fernandes Júnnior" width="800" height="1000" loading="lazy"></div>
+        <figcaption>
+          <h3>Oswaldo Thadeu Miranda Fernandes Júnnior</h3>
+          <span class="oab">Advogado · OAB/MG 183.135</span>
+          <p>Sócio. Coordena o contencioso trabalhista e a consultoria preventiva para empresas.</p>
+        </figcaption>
+      </figure>
+      <figure class="lawyer">
+        <div class="ph"><img src="luiza.jpg" alt="Luíza Cávoli Borel" width="800" height="1000" loading="lazy"></div>
+        <figcaption>
+          <h3>Luíza Cávoli Borel</h3>
+          <span class="oab">Advogada · OAB/MG 224.287</span>
+          <p>Sócia. Coordena a área cível.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="estrutura">
+  <div class="wrap">
+    <span class="label left">Estrutura</span>
+    <h2>Um espaço preparado para receber você.</h2>
+    <p class="intro">Sede no Bairro Alfa Sul, em Manhuaçu, com sala de reuniões e salas de atendimento reservado.</p>
+    <div class="gallery">
+      <figure class="g1"><img src="fachada.jpg" alt="Placa do escritório Miranda Fernandes Advogados na fachada" loading="lazy"><figcaption>Rua Benedito Von Randow, 37</figcaption></figure>
+      <figure class="g2"><img src="biblioteca.jpg" alt="Estante com obras jurídicas do escritório" loading="lazy"><figcaption>Biblioteca</figcaption></figure>
+      <figure class="g3"><img src="recepcao.jpg" alt="Sala de atendimento do escritório com poltronas azuis" loading="lazy"><figcaption>Sala de atendimento</figcaption></figure>
+      <figure class="g4"><img src="sala-reunioes.jpg" alt="Sala de reuniões com a marca do escritório na tela" loading="lazy"><figcaption>Sala de reuniões</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="regiao">
+  <div class="wrap region-grid">
+    <div>
+      <span class="label left">Onde atuamos</span>
+      <h2>Sede em Manhuaçu e atuação em toda a região.</h2>
+      <p class="intro">Acompanhamos processos nas comarcas e Varas do Trabalho da região e, pelo processo eletrônico, em outros estados.</p>
+      <ul class="cities">
+        <li>Manhuaçu <span>sede</span></li>
+        <li>Ponte Nova</li>
+        <li>Muriaé</li>
+        <li>Caratinga</li>
+        <li>Manhumirim</li>
+        <li>Zona da Mata e Leste de Minas</li>
+      </ul>
+    </div>
+    <div class="modes">
+      <div class="mode">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M24 43s14-12.2 14-23a14 14 0 0 0-28 0c0 10.8 14 23 14 23z"/><circle cx="24" cy="20" r="5"/></svg>
+        <div><h3>Atendimento presencial</h3><p>No escritório, em Manhuaçu, ou na sede da empresa, mediante agendamento.</p></div>
+      </div>
+      <div class="mode">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="10" width="36" height="24" rx="2"/><path d="M16 40h16M24 34v6"/></svg>
+        <div><h3>Atendimento on-line</h3><p>Reuniões por vídeo e envio de documentos digitais, para clientes de qualquer cidade.</p></div>
+      </div>
+      <div class="mode">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 10h32v22H20l-8 6v-6H8z"/><path d="M16 19h16M16 25h10"/></svg>
+        <div><h3>Acompanhamento do caso</h3><p>Informações sobre o andamento do processo diretamente com a equipe responsável.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec region" id="contato">
+  <div class="wrap">
+    <div class="center">
+      <span class="label">Contato</span>
+      <h2>Agende um atendimento.</h2>
+      <p class="intro">Fale com a equipe pelo WhatsApp ou visite o escritório em horário comercial.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><small>Telefone e WhatsApp</small><a href="https://wa.me/5533999181359" target="_blank" rel="noopener">(33) 99918-1359</a></div>
+        </div>
+        <div class="ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><small>Endereço</small><b>Rua Benedito Von Randow, 37</b><span>Bairro Alfa Sul · Manhuaçu/MG · CEP 36904-198</span></div>
+        </div>
+        <div class="ci">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><small>Horário</small><b>Segunda a sexta, das 8h às 18h</b><span>Atendimento com agendamento prévio</span></div>
+        </div>
+        <a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+      <div class="map">
+        <iframe title="Mapa: Rua Benedito Von Randow, 37, Alfa Sul, Manhuaçu/MG" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Benedito%20Von%20Randow%2C%2037%2C%20Alfa%20Sul%2C%20Manhua%C3%A7u%20-%20MG&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-top">
+    <div class="wrap foot-grid">
+      <div>
+        <img class="flogo" src="logo-vertical-claro.svg" alt="Miranda Fernandes Advogados" width="185" height="120">
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p><a href="https://wa.me/5533999181359" target="_blank" rel="noopener">(33) 99918-1359</a></p>
+        <p>Rua Benedito Von Randow, 37</p>
+        <p>Alfa Sul · Manhuaçu/MG</p>
+        <p>Segunda a sexta, 8h às 18h</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <p><a href="#escritorio">Escritório</a></p>
+        <p><a href="#atuacao">Áreas de atuação</a></p>
+        <p><a href="#empresas">Para empresas</a></p>
+        <p><a href="#advogados">Advogados</a></p>
+        <p><a href="#estrutura">Estrutura</a></p>
+        <p><a href="#contato">Contato</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="foot-legal">
+    <div class="wrap">
+      <span><strong>MIRANDA FERNANDES ADVOGADOS</strong> · Sociedade de Advogados · OAB/MG 17.886 · CNPJ 57.831.261/0001-70</span>
+      <span>Conteúdo de caráter informativo, conforme o Provimento nº 205/2021 do CFOAB.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.44 1.32-1.98 1.37-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.03-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.56.79 1.93.86 2.07.07.14.12.3.02.49-.09.19-.14.3-.28.47-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.73 1.2 1.56 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.89.28.14.46.21.53.33.07.12.07.69-.18 1.38z"/></svg>
+</a>
+
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'), n=document.getElementById('menu');
+  if(!b||!n) return;
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});
+})();
+</script>
+</body>
+</html>
