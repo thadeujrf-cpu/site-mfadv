@@ -21,7 +21,110 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Método MF Blindagem Empresarial","serviceType":"Consultoria jurídica empresarial preventiva","provider":{"@type":"LegalService","name":"Miranda Fernandes Advogados","url":"https://mirandafernandes.adv.br/"},"areaServed":["Manhuaçu","Ponte Nova","Muriaé","Caratinga","Manhumirim","Minas Gerais"]}
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Método MF Blindagem Empresarial",
+ "serviceType": "Consultoria jurídica empresarial preventiva",
+ "url": "https://mirandafernandes.adv.br/blindagem-empresarial.html",
+ "provider": {
+  "@id": "https://mirandafernandes.adv.br/#escritorio"
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Manhuaçu"
+  },
+  {
+   "@type": "City",
+   "name": "Caratinga"
+  },
+  {
+   "@type": "City",
+   "name": "Muriaé"
+  },
+  {
+   "@type": "City",
+   "name": "Ponte Nova"
+  },
+  {
+   "@type": "City",
+   "name": "Manhumirim"
+  },
+  {
+   "@type": "State",
+   "name": "Minas Gerais"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Início",
+   "item": "https://mirandafernandes.adv.br/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Método MF Blindagem Empresarial",
+   "item": "https://mirandafernandes.adv.br/blindagem-empresarial.html"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "O Método MF Blindagem substitui a contabilidade?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Não. O escritório trabalha junto com a contabilidade da empresa. A contabilidade cuida dos cálculos e das obrigações acessórias; o escritório cuida do risco jurídico das decisões e das rotinas."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Minha empresa já tem processos. Ainda faz sentido?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Faz. A imersão começa justamente pelos processos em andamento e pelas urgências, e o diagnóstico ajuda a entender por que eles surgiram."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "A consultoria é só trabalhista?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Não. O trabalhista é o núcleo, porque é onde está a maior exposição da maioria das empresas, mas o método alcança contratos, estrutura societária, regularidade, consumidor e tributário."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Atendem empresas de outras cidades?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sim. Atendemos presencialmente em Manhuaçu e região e, de forma on-line, empresas de outras cidades."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Como é definido o investimento?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Depende do porte da empresa, do número de colaboradores e do nível de acompanhamento. A proposta é apresentada depois de uma primeira conversa."
+   }
+  }
+ ]
+}
 </script>
 <style>
 :root{
@@ -66,7 +169,7 @@ a{color:inherit}
 .top{position:sticky;top:0;z-index:50;background:rgba(9,26,46,.97);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--hdr);gap:24px}
 .brand img{height:54px;width:auto}
-.nav{display:flex;align-items:center;gap:30px}
+.nav{display:flex;align-items:center;gap:24px}
 .nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:15px;font-weight:600;letter-spacing:.02em}
 .nav a:hover{color:#fff}
 .nav .btn{padding:11px 18px;font-size:14px;color:#fff}
@@ -245,6 +348,8 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
 :focus-visible{outline:2px solid var(--cobre);outline-offset:3px}
 
 /* Responsive */
+@media (max-width:1100px){.nav{gap:18px}.nav a{font-size:14px}}
+@media (max-width:900px){.nav a{font-size:17px}}
 @media (max-width:1060px){
   .hero-grid{grid-template-columns:1.15fr .85fr;gap:40px}
   .area-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -379,18 +484,19 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./" aria-label="Miranda Fernandes Advogados, início">
+    <a class="brand" href="/" aria-label="Miranda Fernandes Advogados, início">
       <img src="logo-horizontal-claro.svg" alt="Miranda Fernandes Advogados" width="211" height="54">
     </a>
     <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
     <nav class="nav" id="menu" aria-label="Principal">
-      <a href="./#escritorio">Escritório</a>
-      <a href="./#atuacao">Atuação</a>
-      <a href="blindagem-empresarial.html" aria-current="page" style="color:#fff">Método MF Blindagem</a>
-      <a href="./#advogados">Advogados</a>
-      <a href="./#contato">Contato</a>
+      <a href="/defesa-trabalhista-empresas.html">Defesa trabalhista</a>
+      <a href="/blindagem-empresarial.html" aria-current="page" style="color:#fff">Método MF Blindagem</a>
+      <a href="/#atuacao">Áreas</a>
+      <a href="/perguntas-frequentes.html">Dúvidas</a>
+      <a href="/artigos.html">Artigos</a>
+      <a href="/#contato">Contato</a>
       <a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar atendimento</a>
     </nav>
   </div>
@@ -520,7 +626,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
 
 <footer>
   <div class="foot-top">
-    <div class="wrap foot-grid">
+    <div class="wrap foot-grid" style="grid-template-columns:1.2fr 1fr 1fr 1fr">
       <div>
         <img class="flogo" src="logo-vertical-claro.svg" alt="Miranda Fernandes Advogados" width="185" height="120">
         <div class="social">
@@ -534,16 +640,26 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
         <p><a href="https://wa.me/5533999181359" target="_blank" rel="noopener">(33) 99918-1359</a></p>
         <p>Rua Benedito Von Randow, 37</p>
         <p>Alfa Sul · Manhuaçu/MG</p>
+        <p>CEP 36904-198</p>
         <p>Segunda a sexta, 8h às 18h</p>
       </div>
       <div>
-        <h4>Navegação</h4>
-        <p><a href="./#escritorio">Escritório</a></p>
-        <p><a href="./#atuacao">Atuação</a></p>
-        <p><a href="blindagem-empresarial.html">Método MF Blindagem</a></p>
-        <p><a href="./#advogados">Advogados</a></p>
-        <p><a href="./#estrutura">Estrutura</a></p>
-        <p><a href="./#contato">Contato</a></p>
+        <h4>Atuação</h4>
+        <p><a href="/defesa-trabalhista-empresas.html">Defesa trabalhista</a></p>
+        <p><a href="/blindagem-empresarial.html">Método MF Blindagem</a></p>
+        <p><a href="/tributario.html">Tributário</a></p>
+        <p><a href="/contratos-empresariais.html">Contratos e societário</a></p>
+        <p><a href="/civel-e-consumidor.html">Cível e consumidor</a></p>
+        <p><a href="/imobiliario-e-possessorio.html">Imobiliário e possessório</a></p>
+      </div>
+      <div>
+        <h4>Onde atuamos</h4>
+        <p><a href="/advogado-trabalhista-empresas-manhuacu.html">Manhuaçu</a></p>
+        <p><a href="/advogado-trabalhista-empresas-caratinga.html">Caratinga</a></p>
+        <p><a href="/advogado-trabalhista-empresas-muriae.html">Muriaé</a></p>
+        <p><a href="/advogado-trabalhista-empresas-ponte-nova.html">Ponte Nova</a></p>
+        <p><a href="/advogado-empresas-manhumirim.html">Manhumirim</a></p>
+        <p><a href="/perguntas-frequentes.html">Perguntas frequentes</a> · <a href="/artigos.html">Artigos</a></p>
       </div>
     </div>
   </div>
