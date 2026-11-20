@@ -423,7 +423,8 @@ p,li{font-weight:500}
 .caso .ci2 svg{width:22px;height:22px}
 .caso b{display:block;font-size:16.5px;line-height:1.3;font-weight:800}
 .caso span{display:block;font-size:14px;margin-top:2px;color:var(--muted);font-weight:500}
-.grupo.emp .caso span{color:rgba(255,255,255,.66)}
+.grupo.emp .caso b{color:#fff}
+.grupo.emp .caso span{color:rgba(255,255,255,.7)}
 .caso .seta{margin-left:auto;color:var(--cobre);font-weight:800;font-size:18px}
 .caso.top{border-color:var(--cobre);background:rgba(189,131,80,.14)}
 .grupo .obs{margin:16px 2px 0;font-size:13.5px;color:rgba(255,255,255,.6)}
@@ -463,6 +464,41 @@ p,li{font-weight:500}
 }
 .regline{margin:18px 0 0;font-size:15.5px;color:var(--muted)}
 .regline a{color:var(--cobre-dk);font-weight:700;text-decoration:none}
+/* Topo claro: assuntos pessoais */
+.bl-hero.light{background:var(--sand);color:var(--ink)}
+.bl-hero.light h1{color:var(--navy)}
+.bl-hero.light .lead{color:#3A4655}
+.bl-hero.light .crumbs,.bl-hero.light .crumbs a{color:#5B6675}
+.bl-hero.light .btn-line{color:var(--navy);border-color:rgba(9,26,46,.3)}
+.bl-hero.light .btn-line:hover{border-color:var(--cobre)}
+.bl-hero.light .label{color:var(--cobre-dk)}
+.bl-hero.light .ph::before{border-color:rgba(189,131,80,.6)}
+/* Resumo rápido das áreas */
+.rapido{position:relative;z-index:2;margin-top:-34px}
+.rap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:0;align-items:stretch;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 44px rgba(9,26,46,.10);overflow:hidden}
+.rap-grid > div{padding:22px 24px;border-right:1px solid var(--line)}
+.rap-grid small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cobre-dk)}
+.rap-grid p{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--ink)}
+.rap-grid .btn{align-self:center;margin:0 22px;white-space:nowrap}
+@media (max-width:1000px){.rap-grid{grid-template-columns:1fr}.rap-grid > div{border-right:0;border-bottom:1px solid var(--line);padding:18px 20px}.rap-grid .btn{margin:16px 20px 20px}}
+/* Índice da página de dúvidas */
+.faq-idx{display:flex;flex-wrap:wrap;gap:8px;padding:18px;background:var(--sand);border-radius:16px}
+.faq-idx a{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:700;color:var(--navy);text-decoration:none}
+.faq-idx a:hover{border-color:var(--cobre)}
+/* Portas de entrada na home */
+.portas{display:grid;gap:14px;width:min(100%,420px);justify-self:end}
+.porta{display:block;padding:24px 24px 22px;border-radius:18px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.porta:hover{transform:translateY(-3px)}
+.porta.emp{background:var(--cobre);color:#fff;box-shadow:0 16px 36px rgba(189,131,80,.35)}
+.porta.pes{background:#fff;color:var(--navy);box-shadow:0 16px 36px rgba(0,0,0,.25)}
+.porta small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.porta b{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px;font-size:21px;line-height:1.25;font-weight:800}
+.porta span{display:block;margin-top:6px;font-size:14.5px;line-height:1.45;font-weight:500;opacity:.88}
+.porta-info{margin:4px 4px 0;font-size:13.5px;color:rgba(255,255,255,.7)}
+.porta-info a{color:#fff;font-weight:700;text-decoration:none}
+@media (max-width:900px){.portas{justify-self:stretch;width:100%;margin-top:8px}}
+.bl-hero.light .crumbs b{color:var(--navy) !important}
+@media (max-width:640px){.hero .facts{display:none}.hero-grid{min-height:0;padding-bottom:56px}}
 
 </style>
 </head>
