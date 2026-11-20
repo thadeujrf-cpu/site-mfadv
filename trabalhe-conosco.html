@@ -528,6 +528,15 @@ p,li{font-weight:500}
 @media (max-width:900px){.portas{justify-self:stretch;width:100%;margin-top:8px}}
 .bl-hero.light .crumbs b{color:var(--navy) !important}
 @media (max-width:640px){.hero .facts{display:none}.hero-grid{min-height:0;padding-bottom:56px}}
+/* Como funciona o atendimento */
+.passos{background:#fff}
+.passos .pgrid{margin-top:40px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:p}
+.passo{position:relative;padding:26px 22px 24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.passo::before{counter-increment:p;content:counter(p,decimal-leading-zero);display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--navy);color:var(--cobre);font-weight:800;font-size:15px;letter-spacing:.04em}
+.passo h3{margin:16px 0 6px;font-size:18px;color:var(--navy);font-weight:800;line-height:1.3}
+.passo p{margin:0;font-size:15px;color:var(--muted);line-height:1.55}
+@media (max-width:900px){.passos .pgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.passos .pgrid{grid-template-columns:1fr;gap:12px}.passo{display:grid;grid-template-columns:40px 1fr;gap:4px 14px;padding:18px}.passo::before{grid-row:span 2}.passo h3{margin:0;align-self:center}.passo p{grid-column:2}}
 
 </style>
 </head>
