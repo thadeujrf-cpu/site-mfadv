@@ -1,10 +1,11 @@
 /* Miranda Fernandes Advogados — aviso de cookies (LGPD) + Google Consent Mode v2
    Preencha os IDs abaixo para ativar a medição. Sem IDs, nada é carregado e o aviso não aparece. */
 (function(){
-  var GA_ID  = '';            // Google Analytics 4, ex.: 'G-XXXXXXXXXX'
+  var GA_ID  = 'G-D09EFQS8MY'; // Google Analytics 4 (propriedade 458540521)
   var ADS_ID = '';            // Google Ads, ex.: 'AW-123456789'
   var ADS_LABELS = {          // rótulos das conversões do Google Ads
     whatsapp_click: '',       // clique no WhatsApp
+    ligacao_click: '',        // clique em Ligar
     contato_enviado: '',      // formulário de contato
     curriculo_enviado: ''     // não é conversão de anúncio; deixe vazio
   };
@@ -37,8 +38,8 @@
   };
 
   document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
-    if (a) window.mfTrack('whatsapp_click');
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"],a[href^="tel:"]');
+    if (a) window.mfTrack(a.getAttribute('href').indexOf('tel:') === 0 ? 'ligacao_click' : 'whatsapp_click');
   }, true);
 
   var css = '#mf-ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#091A2E;color:#fff;border:1px solid rgba(189,131,80,.55);border-radius:14px;padding:20px 22px;box-shadow:0 18px 50px rgba(0,0,0,.35);font-family:Urbanist,system-ui,sans-serif;font-size:15px;line-height:1.55;display:flex;gap:18px;align-items:center;flex-wrap:wrap}'+
