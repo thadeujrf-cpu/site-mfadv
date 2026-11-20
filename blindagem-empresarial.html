@@ -349,6 +349,11 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
 
 /* Responsive */
 @media (max-width:1100px){.nav{gap:18px}.nav a{font-size:14px}}
+.nav a{white-space:nowrap}
+@media (max-width:1366px){.nav{gap:18px}}
+@media (min-width:901px) and (max-width:1180px){.nav a[href="/#atuacao"],.nav a[href="/artigos.html"]{display:none}}
+@media (min-width:901px) and (max-width:1000px){.nav{gap:12px}.nav a{font-size:13px}.nav .btn{padding-left:16px;padding-right:16px}}
+
 @media (max-width:900px){.nav a{font-size:17px}}
 @media (max-width:1060px){
   .hero-grid{grid-template-columns:1.15fr .85fr;gap:40px}
@@ -494,9 +499,9 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
       <a href="/defesa-trabalhista-empresas.html">Defesa trabalhista</a>
       <a href="/blindagem-empresarial.html" aria-current="page" style="color:#fff">Método MF Blindagem</a>
       <a href="/#atuacao">Áreas</a>
-      <a href="/perguntas-frequentes.html">Dúvidas</a>
       <a href="/artigos.html">Artigos</a>
-      <a href="/#contato">Contato</a>
+      <a href="/area-do-cliente.html">Área do cliente</a>
+      <a href="/contato.html">Contato</a>
       <a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar atendimento</a>
     </nav>
   </div>
@@ -642,6 +647,8 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
         <p>Alfa Sul · Manhuaçu/MG</p>
         <p>CEP 36904-198</p>
         <p>Segunda a sexta, 8h às 18h</p>
+        <p><a href="/contato.html">Formulário de contato</a></p>
+        <p><a href="/trabalhe-conosco.html">Trabalhe conosco</a></p>
       </div>
       <div>
         <h4>Atuação</h4>
@@ -666,7 +673,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
   <div class="foot-legal">
     <div class="wrap">
       <span><strong>MIRANDA FERNANDES ADVOGADOS</strong> · Sociedade de Advogados · OAB/MG 17.886 · CNPJ 57.831.261/0001-70</span>
-      <span><a href="/canais-oficiais.html" style="color:inherit">Canais oficiais</a> · <a href="/politica-de-privacidade.html" style="color:inherit">Política de privacidade</a> · Conteúdo informativo, conforme o Provimento nº 205/2021 do CFOAB.</span>
+      <span><a href="/canais-oficiais.html" style="color:inherit">Canais oficiais</a> · <a href="/politica-de-privacidade.html" style="color:inherit">Política de privacidade</a> · <a href="/politica-de-privacidade.html#cookies" style="color:inherit" onclick="if(window.mfCookies){mfCookies();return false;}">Cookies</a> · Conteúdo informativo, conforme o Provimento nº 205/2021 do CFOAB.</span>
     </div>
   </div>
 </footer>
@@ -683,5 +690,6 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.72);font-size:15px}
   n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');});});
 })();
 </script>
+<script src="/consent.js" defer></script>
 </body>
 </html>
