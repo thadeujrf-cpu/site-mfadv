@@ -73,8 +73,8 @@
   {
    "@type": "ListItem",
    "position": 2,
-   "name": "Atuação",
-   "item": "https://mirandafernandes.adv.br/#atuacao"
+   "name": "Para você",
+   "item": "https://mirandafernandes.adv.br/#para-voce"
   },
   {
    "@type": "ListItem",
@@ -518,7 +518,8 @@ p,li{font-weight:500}
 .caso .ci2 svg{width:22px;height:22px}
 .caso b{display:block;font-size:16.5px;line-height:1.3;font-weight:800}
 .caso span{display:block;font-size:14px;margin-top:2px;color:var(--muted);font-weight:500}
-.grupo.emp .caso span{color:rgba(255,255,255,.66)}
+.grupo.emp .caso b{color:#fff}
+.grupo.emp .caso span{color:rgba(255,255,255,.7)}
 .caso .seta{margin-left:auto;color:var(--cobre);font-weight:800;font-size:18px}
 .caso.top{border-color:var(--cobre);background:rgba(189,131,80,.14)}
 .grupo .obs{margin:16px 2px 0;font-size:13.5px;color:rgba(255,255,255,.6)}
@@ -558,6 +559,41 @@ p,li{font-weight:500}
 }
 .regline{margin:18px 0 0;font-size:15.5px;color:var(--muted)}
 .regline a{color:var(--cobre-dk);font-weight:700;text-decoration:none}
+/* Topo claro: assuntos pessoais */
+.bl-hero.light{background:var(--sand);color:var(--ink)}
+.bl-hero.light h1{color:var(--navy)}
+.bl-hero.light .lead{color:#3A4655}
+.bl-hero.light .crumbs,.bl-hero.light .crumbs a{color:#5B6675}
+.bl-hero.light .btn-line{color:var(--navy);border-color:rgba(9,26,46,.3)}
+.bl-hero.light .btn-line:hover{border-color:var(--cobre)}
+.bl-hero.light .label{color:var(--cobre-dk)}
+.bl-hero.light .ph::before{border-color:rgba(189,131,80,.6)}
+/* Resumo rápido das áreas */
+.rapido{position:relative;z-index:2;margin-top:-34px}
+.rap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:0;align-items:stretch;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 44px rgba(9,26,46,.10);overflow:hidden}
+.rap-grid > div{padding:22px 24px;border-right:1px solid var(--line)}
+.rap-grid small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cobre-dk)}
+.rap-grid p{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--ink)}
+.rap-grid .btn{align-self:center;margin:0 22px;white-space:nowrap}
+@media (max-width:1000px){.rap-grid{grid-template-columns:1fr}.rap-grid > div{border-right:0;border-bottom:1px solid var(--line);padding:18px 20px}.rap-grid .btn{margin:16px 20px 20px}}
+/* Índice da página de dúvidas */
+.faq-idx{display:flex;flex-wrap:wrap;gap:8px;padding:18px;background:var(--sand);border-radius:16px}
+.faq-idx a{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:700;color:var(--navy);text-decoration:none}
+.faq-idx a:hover{border-color:var(--cobre)}
+/* Portas de entrada na home */
+.portas{display:grid;gap:14px;width:min(100%,420px);justify-self:end}
+.porta{display:block;padding:24px 24px 22px;border-radius:18px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.porta:hover{transform:translateY(-3px)}
+.porta.emp{background:var(--cobre);color:#fff;box-shadow:0 16px 36px rgba(189,131,80,.35)}
+.porta.pes{background:#fff;color:var(--navy);box-shadow:0 16px 36px rgba(0,0,0,.25)}
+.porta small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+.porta b{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px;font-size:21px;line-height:1.25;font-weight:800}
+.porta span{display:block;margin-top:6px;font-size:14.5px;line-height:1.45;font-weight:500;opacity:.88}
+.porta-info{margin:4px 4px 0;font-size:13.5px;color:rgba(255,255,255,.7)}
+.porta-info a{color:#fff;font-weight:700;text-decoration:none}
+@media (max-width:900px){.portas{justify-self:stretch;width:100%;margin-top:8px}}
+.bl-hero.light .crumbs b{color:var(--navy) !important}
+@media (max-width:640px){.hero .facts{display:none}.hero-grid{min-height:0;padding-bottom:56px}}
 
 </style>
 </head>
@@ -583,11 +619,11 @@ p,li{font-weight:500}
   </div>
 </header>
 <main id="conteudo">
-<section class="bl-hero">
+<section class="bl-hero light">
   <div class="wrap">
     <div>
-      <nav class="crumbs" aria-label="Você está em"><a href="/">Início</a><span>/</span><a href="/#atuacao">Atuação</a><span>/</span><b style="color:#fff;font-weight:600">Terras, divisas e posse</b></nav>
-      <span class="label left">Terras e imóveis rurais</span>
+      <nav class="crumbs" aria-label="Você está em"><a href="/">Início</a><span>/</span><a href="/#para-voce">Para você</a><span>/</span><b style="color:#fff;font-weight:600">Terras, divisas e posse</b></nav>
+      <span class="label left">Para você · Terras e imóveis rurais</span>
       <h1>Terra, divisa e posse: <em>cada metro importa</em>.</h1>
       <p class="lead">Ações possessórias, demarcação de divisas, usucapião, servidões de passagem e de água e contratos de arrendamento e parceria, com atenção às propriedades rurais da Zona da Mata e do Leste de Minas.</p>
       <div class="actions">
@@ -597,7 +633,7 @@ p,li{font-weight:500}
     </div>
     <div class="ph"><img src="/hero-textura.jpg" alt="Textura institucional do escritório Miranda Fernandes Advogados" width="900" height="1125"></div>
   </div>
-</section>
+</section><section class="rapido"><div class="wrap"><div class="rap-grid"><div><small>Para quem é</small><p>Proprietários e produtores com problema de cerca, invasão, divisa, passagem ou água.</p></div><div><small>O que resolvemos</small><p>Ações possessórias, demarcação, usucapião, servidões e contratos de arrendamento e parceria.</p></div><div><small>Primeiro passo</small><p>Envie a matrícula, fotos e o que aconteceu. Em invasão recente, fale com a equipe no mesmo dia.</p></div><a class="btn btn-cobre" href="https://wa.me/5533999181359?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.25.69-1.44 1.32-1.98 1.37-.51.05-1 .24-3.36-.7-2.84-1.12-4.65-4.03-4.79-4.22-.14-.19-1.15-1.53-1.15-2.92s.73-2.07.99-2.35c.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.23.56.79 1.93.86 2.07.07.14.12.3.02.49-.09.19-.14.3-.28.47-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.73 1.2 1.56 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.6-.07.16-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.76 1.88.89.28.14.46.21.53.33.07.12.07.69-.18 1.38z"/></svg>Falar com o escritório</a></div></div></section>
 <section class="sec"><div class="wrap prose">
 <h2>Invasão e perda da posse</h2>
 <p>Reintegração e manutenção de posse e interdito proibitório, com pedido de liminar quando o esbulho é recente. Em posse, o tempo conta: quanto antes a medida, maiores as chances de uma decisão rápida.</p>
